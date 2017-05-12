@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  kamyWidget
+//
+//  Created by xiaoshi on 2017/5/11.
+//  Copyright © 2017年 xiaoshi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "CommonConfig.h"
+
+#endif /* PrefixHeader_pch */

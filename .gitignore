@@ -1,0 +1,6 @@
+*.DS_Store
+ClouderWork-iOS.xcodeproj/project.xcworkspace/xcuserdata
+ClouderWork-iOS.xcodeproj/xcuserdata
+ClouderWork-iOS.xcworkspace/xcuserdata
+Pods/Pods.xcodeproj/xcuserdata
+kamyWidget.xcodeproj/xcuserdata

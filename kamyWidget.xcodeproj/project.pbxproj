@@ -7,25 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C7C20C31EC44CAB00077673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB54DDB1EC42F8E0068175D /* Assets.xcassets */; };
+		3C7C20CA1EC4629F00077673 /* KSWidgetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB54E081EC446830068175D /* KSWidgetItem.m */; };
+		3C7C20FB1EC4725C00077673 /* AllWidget.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C7C20FA1EC4725C00077673 /* AllWidget.plist */; };
 		3CB54DD11EC42F8E0068175D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB54DD01EC42F8E0068175D /* main.m */; };
 		3CB54DD41EC42F8E0068175D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB54DD31EC42F8E0068175D /* AppDelegate.m */; };
 		3CB54DD71EC42F8E0068175D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB54DD61EC42F8E0068175D /* ViewController.m */; };
-		3CB54DDA1EC42F8E0068175D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB54DD81EC42F8E0068175D /* Main.storyboard */; };
 		3CB54DDC1EC42F8E0068175D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB54DDB1EC42F8E0068175D /* Assets.xcassets */; };
 		3CB54DDF1EC42F8E0068175D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB54DDD1EC42F8E0068175D /* LaunchScreen.storyboard */; };
+		3CB54DED1EC431420068175D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB54DEC1EC431420068175D /* NotificationCenter.framework */; };
+		3CB54DF11EC431420068175D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB54DF01EC431420068175D /* TodayViewController.m */; };
+		3CB54DF41EC431420068175D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB54DF21EC431420068175D /* MainInterface.storyboard */; };
+		3CB54DF81EC431420068175D /* launchWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3CB54DEA1EC431420068175D /* launchWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3CB54E051EC445260068175D /* KSWidgetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB54E031EC445260068175D /* KSWidgetCell.m */; };
+		3CB54E061EC445260068175D /* KSWidgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB54E041EC445260068175D /* KSWidgetCell.xib */; };
+		3CB54E091EC446830068175D /* KSWidgetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB54E081EC446830068175D /* KSWidgetItem.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3CB54DF61EC431420068175D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CB54DC41EC42F8E0068175D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CB54DE91EC431420068175D;
+			remoteInfo = launchWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3CB54DFC1EC431420068175D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3CB54DF81EC431420068175D /* launchWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3C7C20C41EC453E300077673 /* CommonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonConfig.h; sourceTree = "<group>"; };
+		3C7C20C61EC4546B00077673 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3C7C20C71EC45E4800077673 /* launchWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = launchWidget.entitlements; sourceTree = "<group>"; };
+		3C7C20C81EC45EF700077673 /* kamyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kamyWidget.entitlements; sourceTree = "<group>"; };
+		3C7C20FA1EC4725C00077673 /* AllWidget.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AllWidget.plist; sourceTree = "<group>"; };
 		3CB54DCC1EC42F8E0068175D /* kamyWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kamyWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB54DD01EC42F8E0068175D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3CB54DD21EC42F8E0068175D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CB54DD31EC42F8E0068175D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3CB54DD51EC42F8E0068175D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3CB54DD61EC42F8E0068175D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3CB54DD91EC42F8E0068175D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CB54DDB1EC42F8E0068175D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CB54DDE1EC42F8E0068175D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CB54DE01EC42F8E0068175D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB54DEA1EC431420068175D /* launchWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = launchWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB54DEC1EC431420068175D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		3CB54DEF1EC431420068175D /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		3CB54DF01EC431420068175D /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		3CB54DF31EC431420068175D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3CB54DF51EC431420068175D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB54E021EC445260068175D /* KSWidgetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSWidgetCell.h; sourceTree = "<group>"; };
+		3CB54E031EC445260068175D /* KSWidgetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSWidgetCell.m; sourceTree = "<group>"; };
+		3CB54E041EC445260068175D /* KSWidgetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KSWidgetCell.xib; sourceTree = "<group>"; };
+		3CB54E071EC446830068175D /* KSWidgetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSWidgetItem.h; sourceTree = "<group>"; };
+		3CB54E081EC446830068175D /* KSWidgetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSWidgetItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +84,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CB54DE71EC431420068175D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB54DED1EC431420068175D /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				3CB54DCE1EC42F8E0068175D /* kamyWidget */,
+				3CB54DEE1EC431420068175D /* launchWidget */,
+				3CB54DEB1EC431420068175D /* Frameworks */,
 				3CB54DCD1EC42F8E0068175D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				3CB54DCC1EC42F8E0068175D /* kamyWidget.app */,
+				3CB54DEA1EC431420068175D /* launchWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,15 +117,18 @@
 		3CB54DCE1EC42F8E0068175D /* kamyWidget */ = {
 			isa = PBXGroup;
 			children = (
+				3C7C20C81EC45EF700077673 /* kamyWidget.entitlements */,
 				3CB54DD21EC42F8E0068175D /* AppDelegate.h */,
 				3CB54DD31EC42F8E0068175D /* AppDelegate.m */,
 				3CB54DD51EC42F8E0068175D /* ViewController.h */,
 				3CB54DD61EC42F8E0068175D /* ViewController.m */,
-				3CB54DD81EC42F8E0068175D /* Main.storyboard */,
 				3CB54DDB1EC42F8E0068175D /* Assets.xcassets */,
 				3CB54DDD1EC42F8E0068175D /* LaunchScreen.storyboard */,
 				3CB54DE01EC42F8E0068175D /* Info.plist */,
 				3CB54DCF1EC42F8E0068175D /* Supporting Files */,
+				3C7C20C41EC453E300077673 /* CommonConfig.h */,
+				3C7C20C61EC4546B00077673 /* PrefixHeader.pch */,
+				3C7C20FA1EC4725C00077673 /* AllWidget.plist */,
 			);
 			path = kamyWidget;
 			sourceTree = "<group>";
@@ -79,6 +141,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3CB54DEB1EC431420068175D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CB54DEC1EC431420068175D /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CB54DEE1EC431420068175D /* launchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3C7C20C71EC45E4800077673 /* launchWidget.entitlements */,
+				3CB54DEF1EC431420068175D /* TodayViewController.h */,
+				3CB54DF01EC431420068175D /* TodayViewController.m */,
+				3CB54DF21EC431420068175D /* MainInterface.storyboard */,
+				3CB54DF51EC431420068175D /* Info.plist */,
+				3CB54E021EC445260068175D /* KSWidgetCell.h */,
+				3CB54E031EC445260068175D /* KSWidgetCell.m */,
+				3CB54E041EC445260068175D /* KSWidgetCell.xib */,
+				3CB54E071EC446830068175D /* KSWidgetItem.h */,
+				3CB54E081EC446830068175D /* KSWidgetItem.m */,
+			);
+			path = launchWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,15 +176,34 @@
 				3CB54DC81EC42F8E0068175D /* Sources */,
 				3CB54DC91EC42F8E0068175D /* Frameworks */,
 				3CB54DCA1EC42F8E0068175D /* Resources */,
+				3CB54DFC1EC431420068175D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3CB54DF71EC431420068175D /* PBXTargetDependency */,
 			);
 			name = kamyWidget;
 			productName = kamyWidget;
 			productReference = 3CB54DCC1EC42F8E0068175D /* kamyWidget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3CB54DE91EC431420068175D /* launchWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB54DF91EC431420068175D /* Build configuration list for PBXNativeTarget "launchWidget" */;
+			buildPhases = (
+				3CB54DE61EC431420068175D /* Sources */,
+				3CB54DE71EC431420068175D /* Frameworks */,
+				3CB54DE81EC431420068175D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = launchWidget;
+			productName = launchWidget;
+			productReference = 3CB54DEA1EC431420068175D /* launchWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -112,6 +218,21 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 9CJP9J82HZ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					3CB54DE91EC431420068175D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9CJP9J82HZ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -129,6 +250,7 @@
 			projectRoot = "";
 			targets = (
 				3CB54DCB1EC42F8E0068175D /* kamyWidget */,
+				3CB54DE91EC431420068175D /* launchWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -139,8 +261,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CB54DDF1EC42F8E0068175D /* LaunchScreen.storyboard in Resources */,
+				3C7C20FB1EC4725C00077673 /* AllWidget.plist in Resources */,
 				3CB54DDC1EC42F8E0068175D /* Assets.xcassets in Resources */,
-				3CB54DDA1EC42F8E0068175D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB54DE81EC431420068175D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7C20C31EC44CAB00077673 /* Assets.xcassets in Resources */,
+				3CB54DF41EC431420068175D /* MainInterface.storyboard in Resources */,
+				3CB54E061EC445260068175D /* KSWidgetCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,29 +283,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7C20CA1EC4629F00077673 /* KSWidgetItem.m in Sources */,
 				3CB54DD71EC42F8E0068175D /* ViewController.m in Sources */,
 				3CB54DD41EC42F8E0068175D /* AppDelegate.m in Sources */,
 				3CB54DD11EC42F8E0068175D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CB54DE61EC431420068175D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB54DF11EC431420068175D /* TodayViewController.m in Sources */,
+				3CB54E051EC445260068175D /* KSWidgetCell.m in Sources */,
+				3CB54E091EC446830068175D /* KSWidgetItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		3CB54DD81EC42F8E0068175D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3CB54DD91EC42F8E0068175D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		3CB54DF71EC431420068175D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CB54DE91EC431420068175D /* launchWidget */;
+			targetProxy = 3CB54DF61EC431420068175D /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		3CB54DDD1EC42F8E0068175D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3CB54DDE1EC42F8E0068175D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3CB54DF21EC431420068175D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CB54DF31EC431420068175D /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -220,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -273,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kamyWidget/kamyWidget.entitlements;
 				DEVELOPMENT_TEAM = 9CJP9J82HZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/kamyWidget/PrefixHeader.pch";
 				INFOPLIST_FILE = kamyWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kamyWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = group.kamy.kamyWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -285,11 +439,46 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kamyWidget/kamyWidget.entitlements;
 				DEVELOPMENT_TEAM = 9CJP9J82HZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/kamyWidget/PrefixHeader.pch";
 				INFOPLIST_FILE = kamyWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kamyWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = group.kamy.kamyWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3CB54DFA1EC431420068175D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = launchWidget/launchWidget.entitlements;
+				DEVELOPMENT_TEAM = 9CJP9J82HZ;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/kamyWidget/PrefixHeader.pch";
+				INFOPLIST_FILE = launchWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.kamy.kamyWidget.launchWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3CB54DFB1EC431420068175D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = launchWidget/launchWidget.entitlements;
+				DEVELOPMENT_TEAM = 9CJP9J82HZ;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/kamyWidget/PrefixHeader.pch";
+				INFOPLIST_FILE = launchWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.kamy.kamyWidget.launchWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -312,6 +501,16 @@
 				3CB54DE51EC42F8E0068175D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CB54DF91EC431420068175D /* Build configuration list for PBXNativeTarget "launchWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB54DFA1EC431420068175D /* Debug */,
+				3CB54DFB1EC431420068175D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
