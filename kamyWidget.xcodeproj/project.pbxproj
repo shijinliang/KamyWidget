@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C6902231EC5C91300BE273D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB54DEC1EC431420068175D /* NotificationCenter.framework */; };
+		3C6902271EC5C91300BE273D /* SystemTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6902261EC5C91300BE273D /* SystemTodayViewController.m */; };
+		3C69022A1EC5C91300BE273D /* SystemMainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C6902281EC5C91300BE273D /* SystemMainInterface.storyboard */; };
+		3C69022E1EC5C91300BE273D /* systemWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3C6902221EC5C91300BE273D /* systemWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3C6902321EC5C97400BE273D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB54DDB1EC42F8E0068175D /* Assets.xcassets */; };
+		3C6902351EC5CB2000BE273D /* SystemDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6902341EC5CB2000BE273D /* SystemDataTool.m */; };
+		3C6902371EC5CB4200BE273D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6902361EC5CB4200BE273D /* SystemConfiguration.framework */; };
+		3C6902391EC5CBDA00BE273D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6902381EC5CBDA00BE273D /* NetworkExtension.framework */; };
 		3C7C20C31EC44CAB00077673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB54DDB1EC42F8E0068175D /* Assets.xcassets */; };
 		3C7C20CA1EC4629F00077673 /* KSWidgetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB54E081EC446830068175D /* KSWidgetItem.m */; };
 		3C7C20FB1EC4725C00077673 /* AllWidget.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C7C20FA1EC4725C00077673 /* AllWidget.plist */; };
@@ -25,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3C69022C1EC5C91300BE273D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CB54DC41EC42F8E0068175D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C6902211EC5C91300BE273D;
+			remoteInfo = systemWidget;
+		};
 		3CB54DF61EC431420068175D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3CB54DC41EC42F8E0068175D /* Project object */;
@@ -42,6 +57,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				3CB54DF81EC431420068175D /* launchWidget.appex in Embed App Extensions */,
+				3C69022E1EC5C91300BE273D /* systemWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +65,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C6902221EC5C91300BE273D /* systemWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = systemWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C6902251EC5C91300BE273D /* SystemTodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemTodayViewController.h; sourceTree = "<group>"; };
+		3C6902261EC5C91300BE273D /* SystemTodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemTodayViewController.m; sourceTree = "<group>"; };
+		3C6902291EC5C91300BE273D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SystemMainInterface.storyboard; sourceTree = "<group>"; };
+		3C69022B1EC5C91300BE273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C6902331EC5CB2000BE273D /* SystemDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemDataTool.h; sourceTree = "<group>"; };
+		3C6902341EC5CB2000BE273D /* SystemDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemDataTool.m; sourceTree = "<group>"; };
+		3C6902361EC5CB4200BE273D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3C6902381EC5CBDA00BE273D /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		3C7C20C41EC453E300077673 /* CommonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonConfig.h; sourceTree = "<group>"; };
 		3C7C20C61EC4546B00077673 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		3C7C20C71EC45E4800077673 /* launchWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = launchWidget.entitlements; sourceTree = "<group>"; };
@@ -77,6 +102,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3C69021F1EC5C91300BE273D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6902391EC5CBDA00BE273D /* NetworkExtension.framework in Frameworks */,
+				3C6902371EC5CB4200BE273D /* SystemConfiguration.framework in Frameworks */,
+				3C6902231EC5C91300BE273D /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CB54DC91EC42F8E0068175D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,11 +130,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C6902241EC5C91300BE273D /* systemWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3C6902251EC5C91300BE273D /* SystemTodayViewController.h */,
+				3C6902261EC5C91300BE273D /* SystemTodayViewController.m */,
+				3C6902281EC5C91300BE273D /* SystemMainInterface.storyboard */,
+				3C69022B1EC5C91300BE273D /* Info.plist */,
+				3C6902331EC5CB2000BE273D /* SystemDataTool.h */,
+				3C6902341EC5CB2000BE273D /* SystemDataTool.m */,
+			);
+			path = systemWidget;
+			sourceTree = "<group>";
+		};
 		3CB54DC31EC42F8D0068175D = {
 			isa = PBXGroup;
 			children = (
 				3CB54DCE1EC42F8E0068175D /* kamyWidget */,
 				3CB54DEE1EC431420068175D /* launchWidget */,
+				3C6902241EC5C91300BE273D /* systemWidget */,
 				3CB54DEB1EC431420068175D /* Frameworks */,
 				3CB54DCD1EC42F8E0068175D /* Products */,
 			);
@@ -110,6 +159,7 @@
 			children = (
 				3CB54DCC1EC42F8E0068175D /* kamyWidget.app */,
 				3CB54DEA1EC431420068175D /* launchWidget.appex */,
+				3C6902221EC5C91300BE273D /* systemWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +194,8 @@
 		3CB54DEB1EC431420068175D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C6902381EC5CBDA00BE273D /* NetworkExtension.framework */,
+				3C6902361EC5CB4200BE273D /* SystemConfiguration.framework */,
 				3CB54DEC1EC431420068175D /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -169,6 +221,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3C6902211EC5C91300BE273D /* systemWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C6902311EC5C91300BE273D /* Build configuration list for PBXNativeTarget "systemWidget" */;
+			buildPhases = (
+				3C69021E1EC5C91300BE273D /* Sources */,
+				3C69021F1EC5C91300BE273D /* Frameworks */,
+				3C6902201EC5C91300BE273D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = systemWidget;
+			productName = systemWidget;
+			productReference = 3C6902221EC5C91300BE273D /* systemWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		3CB54DCB1EC42F8E0068175D /* kamyWidget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CB54DE31EC42F8E0068175D /* Build configuration list for PBXNativeTarget "kamyWidget" */;
@@ -182,6 +251,7 @@
 			);
 			dependencies = (
 				3CB54DF71EC431420068175D /* PBXTargetDependency */,
+				3C69022D1EC5C91300BE273D /* PBXTargetDependency */,
 			);
 			name = kamyWidget;
 			productName = kamyWidget;
@@ -214,6 +284,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = xiaoshi;
 				TargetAttributes = {
+					3C6902211EC5C91300BE273D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9CJP9J82HZ;
+						ProvisioningStyle = Automatic;
+					};
 					3CB54DCB1EC42F8E0068175D = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 9CJP9J82HZ;
@@ -251,11 +326,21 @@
 			targets = (
 				3CB54DCB1EC42F8E0068175D /* kamyWidget */,
 				3CB54DE91EC431420068175D /* launchWidget */,
+				3C6902211EC5C91300BE273D /* systemWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3C6902201EC5C91300BE273D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6902321EC5C97400BE273D /* Assets.xcassets in Resources */,
+				3C69022A1EC5C91300BE273D /* SystemMainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CB54DCA1EC42F8E0068175D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,6 +364,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3C69021E1EC5C91300BE273D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6902351EC5CB2000BE273D /* SystemDataTool.m in Sources */,
+				3C6902271EC5C91300BE273D /* SystemTodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CB54DC81EC42F8E0068175D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +397,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3C69022D1EC5C91300BE273D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C6902211EC5C91300BE273D /* systemWidget */;
+			targetProxy = 3C69022C1EC5C91300BE273D /* PBXContainerItemProxy */;
+		};
 		3CB54DF71EC431420068175D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3CB54DE91EC431420068175D /* launchWidget */;
@@ -311,6 +410,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3C6902281EC5C91300BE273D /* SystemMainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C6902291EC5C91300BE273D /* Base */,
+			);
+			name = SystemMainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		3CB54DDD1EC42F8E0068175D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -330,6 +437,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3C69022F1EC5C91300BE273D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 9CJP9J82HZ;
+				INFOPLIST_FILE = systemWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.kamy.kamyWidget.systemWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3C6902301EC5C91300BE273D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 9CJP9J82HZ;
+				INFOPLIST_FILE = systemWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.kamy.kamyWidget.systemWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		3CB54DE11EC42F8E0068175D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,6 +618,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3C6902311EC5C91300BE273D /* Build configuration list for PBXNativeTarget "systemWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C69022F1EC5C91300BE273D /* Debug */,
+				3C6902301EC5C91300BE273D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3CB54DC71EC42F8E0068175D /* Build configuration list for PBXProject "kamyWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
