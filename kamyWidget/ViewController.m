@@ -21,21 +21,13 @@
     self.navigationItem.title = @"Kamy欢迎你";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSMutableArray *itemArray = [NSMutableArray array];
-    for (int i=0; i<10; i++) {
-        KSWidgetItem *item = [KSWidgetItem initItemWithIcon:@"database" title:@"电池" url:@"App-Prefs:root=Battery"];
-        NSDictionary *dic = [item itemToDic];
-        [itemArray addObject:dic];
-    }
-    NSArray *array = [NSArray arrayWithArray:[itemArray copy]];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"AllWidget" ofType:@"plist"];
+    NSDictionary *dataDic = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSArray *items = dataDic[@"items"];
     
     NSUserDefaults *shared = [[NSUserDefaults alloc] initWithSuiteName:@"group.kamy"];
-    [shared setObject:array forKey:ItemArrayUserDefault];
-    [shared setObject:@"test" forKey:@"test"];
+    [shared setObject:items forKey:ItemArrayUserDefault];
     [shared synchronize];
-    
-    NSArray *userDefaultArray = (NSArray *)[[NSUserDefaults standardUserDefaults] valueForKey:ItemArrayUserDefault];
-    NSLog(@"%d", userDefaultArray.count);
 }
 
 

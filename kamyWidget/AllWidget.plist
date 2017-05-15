@@ -6,11 +6,19 @@
 	<array>
 		<dict>
 			<key>icon</key>
-			<string></string>
+			<string>shuju_network</string>
 			<key>title</key>
-			<string></string>
+			<string>蜂窝数据</string>
 			<key>url</key>
-			<string></string>
+			<string>App-Prefs:root=MOBILE_DATA_SETTINGS_ID</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>location</string>
+			<key>title</key>
+			<string>定位</string>
+			<key>url</key>
+			<string>App-Prefs:root=LOCATION_SERVICES</string>
 		</dict>
 	</array>
 </dict>
